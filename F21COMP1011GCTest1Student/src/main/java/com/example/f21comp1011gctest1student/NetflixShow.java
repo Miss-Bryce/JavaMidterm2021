@@ -42,7 +42,7 @@ public class NetflixShow {
             this.showId = showId;
         }
         else {
-            System.out.println("Show ID must start with an S and contain numbers.");
+            throw new IllegalArgumentException("Show ID must start with an S and contain numbers.");
         }
     }
 
@@ -51,16 +51,16 @@ public class NetflixShow {
             this.type = type;
         }
         else {
-            System.out.println("Type must be one of the following: Movie or TV Show.");
+            throw new IllegalArgumentException("Type must be one of the following: Movie or TV Show.");
         }
     }
 
     public void setTitle(String title) {
-        if (title.length() > 1) {
+        if (title.length() >= 2) {
             this.title = title;
         }
         else {
-            System.out.println("Title must be at least two characters long.");
+            throw new IllegalArgumentException("Title must be at least two characters long.");
         }
     }
 
@@ -72,25 +72,25 @@ public class NetflixShow {
             this.rating = rating;
         }
         else {
-            System.out.println("The Rating much match one of the following types: PG-13, R, TV-14, TV-G, TV-MA, TV-Y, or TV-Y7");
+            throw new IllegalArgumentException("The Rating much match one of the following types: PG-13, R, TV-14, TV-G, TV-MA, TV-Y, or TV-Y7");
         }
     }
 
     public void setDirector(String director) {
-        if (director.length() > 1) {
+        if (director.length() >= 2) {
             this.director = director;
         }
         else {
-            System.out.println("Director must be at least two characters long.");
+            throw new IllegalArgumentException("Director must be at least two characters long.");
         }
     }
 
     public void setCast(String cast) {
-        if (cast.length() > 4) {
+        if (cast.length() >= 5) {
             this.cast = cast;
         }
         else {
-            System.out.println("Cast must be at least five characters long.");
+            throw new IllegalArgumentException("Cast must be at least five characters long.");
         }
     }
 
