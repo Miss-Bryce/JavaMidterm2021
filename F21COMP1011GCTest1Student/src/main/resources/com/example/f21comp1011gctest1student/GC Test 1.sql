@@ -126,15 +126,3 @@ INSERT INTO `netflix` VALUES ('s96','TV Show','The Circle','','Michelle Buteau',
 INSERT INTO `netflix` VALUES ('s97','Movie','If I Leave Here Tomorrow: A Film About Lynyrd Skynyrd','Stephen Kijak','Ronnie Van Zandt, Gary Rossington, Allen Collins, Leon Wilkeson, Bob Burns, Billy Powell, Ed King, Artimus Pyle, Steve Gaines, Johnny Van Zant','United States','7-Sep-21',2018,'TV-MA','97 min','Documentaries, Music & Musicals','Using interviews and archival footage, this documentary charts the story of the legendary Southern rockers with a focus on front man Ronnie Van Zant.');
 INSERT INTO `netflix` VALUES ('s98','TV Show','Kid Cosmic','','Jack Fisher, Tom Kenny, Amanda C. Miller, Kim Yarbrough, Keith Ferguson, Grey Griffin, Lily Rose Silver','United States','7-Sep-21',2021,'TV-Y7','2 Seasons','Kids\' TV, TV Comedies, TV Sci-Fi & Fantasy','A boy\'s superhero dreams come true when he finds five powerful cosmic stones. But saving the day is harder than he imagined â€” and he can\'t do it alone.');
 INSERT INTO `netflix` VALUES ('s99','TV Show','Octonauts: Above & Beyond','','Antonio Aakeel, Chipo Chung, Simon Foster, Teresa Gallagher, Simon Greenall, Kate Harbour, Paul Panting, Rob Rackstraw, William Vanderpuye, Helen Walsh, Keith Wickham, Andres Williams, Jo Wyatt','United Kingdom','7-Sep-21',2021,'TV-Y','1 Season','British TV Shows, Kids\' TV','The Octonauts expand their exploration beyond the sea â€”Â and onto land! With new rides and new friends, they\'ll protect any habitats and animals at risk.');
-
-
-	
-Select * from netflix;
-
-SET SQL_SAFE_UPDATES =0;
-
-UPDATE netflix
-SET director = 'unkown' WHERE director = '';
-
-UPDATE netflix
-SET cast = 'unknown' WHERE cast = '';

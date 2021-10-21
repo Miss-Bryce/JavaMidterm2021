@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/GC Test 1.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/F21COMP1011GCTest1Student/src/main/resources/com/example/f21comp1011gctest1student/GC Test 1.sql" dialect="GenericSQL" />
     <file url="PROJECT" dialect="MySQL" />
   </component>
 </project>

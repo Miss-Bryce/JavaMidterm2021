@@ -9,6 +9,15 @@ public class NetflixShow {
     String director;
     String cast;
 
+    public NetflixShow(String showId, String type, String title, String rating, String director, String cast) {
+        setShowId(showId);
+        setType(type);
+        setTitle(title);
+        setRating(rating);
+        setDirector(director);
+        setCast(cast);
+    }
+
 
     //getters
     public String getShowId() {
@@ -93,5 +102,8 @@ public class NetflixShow {
             throw new IllegalArgumentException("Cast must be at least five characters long.");
         }
     }
+
+
+
 
 }
