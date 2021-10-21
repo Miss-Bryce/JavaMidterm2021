@@ -55,6 +55,8 @@ public class NetflixTableController implements Initializable {
         selectRatingComboBox.getItems().add("TV-MA");
         selectRatingComboBox.getItems().add("TV-Y");
         selectRatingComboBox.getItems().add("TV-Y7");
+        movieCheckBox.isSelected();
+        tvCheckBox.isSelected();
 
         showIdCol.setCellValueFactory(new PropertyValueFactory<>("showID"));
         typeCol.setCellValueFactory(new PropertyValueFactory<>("type"));
@@ -68,5 +70,6 @@ public class NetflixTableController implements Initializable {
 
     @FXML
     void applyFilter(ActionEvent event)  {
+
     }
 }
