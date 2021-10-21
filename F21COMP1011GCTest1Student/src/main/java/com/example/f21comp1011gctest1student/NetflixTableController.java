@@ -56,6 +56,7 @@ public class NetflixTableController implements Initializable {
         directorCol.setCellValueFactory(new PropertyValueFactory<>("director"));
         castCol.setCellValueFactory(new PropertyValueFactory<>("cast"));
 
+        tableView.getItems().addAll(DBUtility.getNetflixDetails());
     }
 
     @FXML
