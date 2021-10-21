@@ -12,7 +12,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("netflix-table-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        scene.getStylesheets().add("main/resources/styles.css");
+        scene.getStylesheets().add("resources/com.example.f21comp1011gctest1student/styles.css");
         stage.setTitle("Netflix Movies and Shows");
         stage.setScene(scene);
         stage.show();

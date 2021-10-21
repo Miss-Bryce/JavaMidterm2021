@@ -48,6 +48,13 @@ public class NetflixTableController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         selectRatingComboBox.getItems().add("All ratings");
+        selectRatingComboBox.getItems().add("PG-13");
+        selectRatingComboBox.getItems().add("R");
+        selectRatingComboBox.getItems().add("TV-14");
+        selectRatingComboBox.getItems().add("TV-G");
+        selectRatingComboBox.getItems().add("TV-MA");
+        selectRatingComboBox.getItems().add("TV-Y");
+        selectRatingComboBox.getItems().add("TV-Y7");
 
         showIdCol.setCellValueFactory(new PropertyValueFactory<>("showID"));
         typeCol.setCellValueFactory(new PropertyValueFactory<>("type"));
